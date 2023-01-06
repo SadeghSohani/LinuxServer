@@ -6,6 +6,13 @@ sudo kill `sudo lsof -t -i:44066`
 ```
 sudo iptables -I INPUT -p tcp --dport 5151 -j ACCEPT
 ```
+## Firewall
+```
+sudo firewall-cmd --add-port 5050/tcp
+```
+```
+sudo firewall-cmd --list-ports
+```
 ## Install and config mysql:
 ```
 sudo apt-get install mysql-server
